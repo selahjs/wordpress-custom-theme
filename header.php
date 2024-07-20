@@ -21,7 +21,7 @@
 <body>
     
     <header class="header text-center">
-        <a class="site-title pt-lg-4 mb-0" href="index.html"><?php echo get_bloginfo('name');?></a>
+        <a class="site-title pt-lg-4 mb-0" href="/wordpress"><?php echo get_bloginfo('name');?></a>
         <!-- <?php print_r(get_template_directory_uri().'/logo.png')?> -->
 
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -49,14 +49,9 @@
                 );
                 ?>
                 <hr>
-                <ul class="social-list list-inline py-3 mx-auto">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
-                </ul>
-
+                <?php
+                dynamic_sidebar('sidebar-1');
+                ?>
             </div>
         </nav>
     </header>
